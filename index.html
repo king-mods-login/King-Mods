@@ -143,9 +143,10 @@ function resetKey(){
 }
 
 function copyKey(){
-    const text = document.getElementById("key").innerText;
-    navigator.clipboard.writeText(text);
-    document.getElementById("msg").style.display = "block";
+    const i = document.getElementById("keyInput");
+    i.select();
+    navigator.clipboard.writeText(i.value);
+    alert("تم نسخ المفتاح ✅");
 }
 </script>
 
