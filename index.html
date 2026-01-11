@@ -102,7 +102,7 @@ button:hover{
     <div id="keyBox">
         <div id="key"></div>
         <button id="copyBtn" onclick="copyKey()">COPY KEY 📋</button>
-        <div id="msg">THE KEY WAS SUCCESSFULLY COPIED ✅</div>
+        <div id="msg">✅</div>
     </div>
 
 </div>
@@ -121,7 +121,7 @@ function randomPart(){
 }
 
 function generateKey(){
-    const key = "King-Mods-" + randomPart();
+    const key = "KING-MODS-" + randomPart();
     document.getElementById("key").innerText = key;
 
     expireTime = Date.now() + (5 * 60 * 1000); // 5 minutes (hidden)
@@ -145,7 +145,7 @@ function resetKey(){
 function copyKey(){
     const text = document.getElementById("key").innerText;
     navigator.clipboard.writeText(text);
-    alert("تم نسخ المفتاح ✅");
+    alert("COPIED SUCCESSFULLY ✅");
 }
 </script>
 
