@@ -122,7 +122,7 @@ function randomPart(){
 }
 
 function generateKey(){
-    const key = "KING-MODS-" + randomPart();
+    const key = "King-Mods-" + randomPart();
     document.getElementById("key").innerText = key;
 
     expireTime = Date.now() + (5 * 60 * 1000); // 5 minutes (hidden)
